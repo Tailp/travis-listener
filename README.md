@@ -13,7 +13,7 @@ npm run-script build
 ### Run as ActiveMQ BuildRainer for Repairnator
 If no activeMQ or activeMQ version supporting JMX, run this docker image.
 ```
-    docker run -d --net=host antonw/activemq-jmx
+docker run -d --net=host antonw/activemq-jmx
 ```
 Webpage can be visited at [http://localhost:8161/](http://localhost:8161/). Then more dependencies to be installed for npm.
 ```js
