@@ -21,7 +21,7 @@ npm install stomp-client jmx sleep
 ```
 Set enviroment variables in ActiveMQcollect_withEnv.sh and run with
 ```
-sudo ./ActiveMQcollect_withEnv
+sudo ./ActiveMQcollect_withEnv.sh
 ```
 or run with just default config
 ```
