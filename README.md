@@ -10,6 +10,29 @@ npm run-script build
 
 ## Usage
 
+### Run as ActiveMQ BuildRainer for Repairnator
+If no activeMQ or activeMQ version supporting JMX, run this docker image.
+```
+    docker run -d --net=host antonw/activemq-jmx
+```
+Webpage can be visited at [http://localhost:8161/](http://localhost:8161/). Then more dependencies to be installed for npm.
+```js
+npm install stomp-client jmx sleep
+```
+Set enviroment variables in ActiveMQcollect_withEnv.sh and run with
+```
+sudo ./ActiveMQcollect_withEnv
+```
+or run with just default config
+```
+npm run-script ActiveMQcollect
+```
+Clean up by deleting docker image
+```
+docker ps -a
+docker rm CONTAINER_ID -f
+```
+
 ### Download jobs
 
 Download all the Travis-CI jobs into `DEST` folder (see `script/collect.js`). The JSON files are called `X-Y.json`, eg `480037011-480037260.json`. This means that the file contains all jobs between 480037011 and 480037260. This is way more performant that saving one job per file.
