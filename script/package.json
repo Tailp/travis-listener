@@ -8,7 +8,8 @@
     "build": "grunt",
     "dev": "grunt dev",
     "server": "node server.js",
-    "collect": "node collect.js"
+    "collect": "node collect.js",
+    "ActiveMQcollect": "node ActiveMQcollect.js"
   },
   "author": "",
   "license": "ISC",
