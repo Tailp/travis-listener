@@ -2,7 +2,7 @@ const async = require("async");
 const fs = require("fs");
 
 const scanner = require("./scanner");
-const DEST = ("folder/")
+const DEST = ("/tmp/travis-listener/")
 
 // ActiveMQ
 var Stomp = require('stomp-client');
